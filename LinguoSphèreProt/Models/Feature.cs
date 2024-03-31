@@ -8,7 +8,7 @@ namespace LinguoSphèreProt.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int? FeatureID { get; set; }
-        public string? nom { get; set; }
+        public int FeatureID { get; set; }
+        public string? Nom { get; set; }
     }
 }

@@ -7,7 +7,7 @@ namespace LinguoSphèreProt.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int? LangageID { get; set; }
-        public string? nom {  get; set; }
+        public int LangageID { get; set; }
+        public string? Nom {  get; set; }
     }
 }
