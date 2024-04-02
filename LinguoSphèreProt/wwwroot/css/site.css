@@ -20,3 +20,152 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.course-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.course-card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: calc(16.66% - 20px);
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s; /* transition pour effet de survol */
+}
+
+.course-card img:hover {
+    transform: scale(1.05); /* zoom léger */
+}
+
+.course-info {
+    font-size: 14px;
+    padding: 10px;
+}
+
+@media (max-width: 1200px) {
+    .course-card {
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+.course-card-link {
+    text-decoration: none; /* Enlève le soulignement */
+    color: inherit; /* Le texte prend la couleur héritée du parent */
+}
+
+.course-card-link:hover,
+.course-card-link:visited,
+.course-card-link:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.niveau {
+    font-weight: bold;
+    color: #ff5a5f;
+}
+
+#course-details{
+    max-width: 100%; /* Ajouté - vous pouvez ajuster cette valeur selon vos préférences */
+    margin: 20px auto; /* Modifié - margin auto centre les sections horizontalement */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start; /* Cela alignera les éléments en haut */
+    border: 1px solid black
+}
+
+
+#course-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start; /* Cela alignera les éléments en haut */
+    text-align: center; /* Ajouté */
+}
+
+.course-image,
+.course-infoTwo {
+    flex: 1; /* Cela permettra à chaque élément d'occuper la moitié de l'espace disponible */
+    max-width: 50%; /* Cela limitera la largeur à 50% */
+}
+
+.course-image {
+    margin-right: 20px;
+    margin: auto; /* Ajouté */
+}
+
+    .course-image img {
+        width: 100%; /* Ajustez la largeur de l'image à 100% pour qu'elle remplisse la .chambre-image */
+        height: auto; /* Cela maintiendra l'aspect ratio de l'image */
+        border-radius: 10px;
+    }
+
+@media (max-width: 1100px) {
+
+    .course-image {
+        margin-right: 0px;
+        margin: auto; /* Ajouté */
+    }
+
+    #course-details {
+        flex-direction: column;
+        align-items: center; /* Ajouté pour centrer les éléments */
+        text-align: center; /* Ajouté pour centrer le texte */
+    }
+
+    .course-image,
+    .course-infoTwo {
+        max-width: 100%; /* Permet à chaque élément d'occuper toute la largeur sur mobile */
+        margin: 0; /* Réinitialise la marge */
+        padding: 0; /* Réinitialise le padding */
+        box-sizing: border-box; /* Assure que padding et border sont inclus dans la largeur/hauteur de l'élément */
+    }
+
+    #course-details{
+        max-width: 100%; /* Ajouté - vous pouvez ajuster cette valeur selon vos préférences */
+    }
+
+    .course-infoTwo {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrer les éléments dans .chambre-info */
+    }
+}
+
+.course-infoTwo {
+    margin: auto; /* Ajouté */
+    display: inline-block; /* Ajouté */
+    margin-left: 20px;
+}
+
+    .course-info h1{
+        color: #333;
+    }
+
+.description {
+    margin-bottom: 20px;
+}
+
+
+/* Effet de survol pour les images */
+.course-image img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
