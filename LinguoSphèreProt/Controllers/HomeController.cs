@@ -23,11 +23,6 @@ namespace LinguoSphèreProt.Controllers
             return View();
         }
 
-        public IActionResult Courses()
-        {
-            return View();
-        }
-
         public IActionResult About()
         {
             return View();

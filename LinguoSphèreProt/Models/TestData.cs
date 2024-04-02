@@ -40,11 +40,11 @@
             {
                 new Feature
                 {
-                    Nom = "Interactive,Cultural Immersion,Speaking Practice"
+                    Nom = " Interactive , Cultural Immersion , Speaking Practice "
                 },
                 new Feature
                 {
-                    Nom = "Business Vocabulary,Email Writing,Networking"
+                    Nom = " Business Vocabulary , Email Writing , Networking "
                 }
             };
             return features;
@@ -62,7 +62,7 @@
                     Titre = "Everyday Conversations",
                     Description = "Interactive French course focused on daily interactions and essential phrases.",
                     Objectives = "To equip learners with basic conversational skills in French for everyday situations.",
-                    PhotoURL = "~images/1.jpg",
+                    PhotoURL = "~/images/1.jpg",
                     DateDebut = new DateTime(2024,6,1),
                     Niveau = niveaux[0],
                     Langue = langages[0],
@@ -74,10 +74,10 @@
                     Titre = "Business French Essentials",
                     Description = "A course designed for professionals to enhance their business communication in French.",
                     Objectives = "To develop language skills for business contexts, including negotiations and presentations.",
-                    PhotoURL = "~images/2.jpg",
+                    PhotoURL = "~/images/2.jpg",
                     DateDebut = new DateTime(2024, 7, 1),
                     Niveau = niveaux[1],
-                    Langue = langages[1],
+                    Langue = langages[0],
                     Features = features[1]
                 });
             }
