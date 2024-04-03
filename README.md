@@ -4,10 +4,10 @@ Ce projet est concu pour le stage avec l'objectif de servir comme un prototype s
 
 # TECHNOLOGIE UTILISÉ
 <ol>
-  <li>1.) ASP.NET Core is a framework that is being used by millions of developers to build web apps and services. </li>
-  <li>2.) ASP.NET Core MVC est une manière de concevoir des sites webs plus complexes en utilisant le modèle Model-View-Controller(MVC)</li>
-  <li>3.) Blazor Server to execute C# code of the application while maintaining an HTTP connection to the server ASP.NET Core</li>
-  <li>4.) EF Core (Entity Framework Core) to serve as a database to easily access data needed for the classes made in the project. EF Core makes it easier to make database classes and make SQL requests.</li>
+  <li>ASP.NET Core is a framework that is being used by millions of developers to build web apps and services. </li>
+  <li>ASP.NET Core MVC est une manière de concevoir des sites webs plus complexes en utilisant le modèle Model-View-Controller(MVC)</li>
+  <li>Blazor Server to execute C# code of the application while maintaining an HTTP connection to the server ASP.NET Core</li>
+  <li>EF Core (Entity Framework Core) to serve as a database to easily access data needed for the classes made in the project. EF Core makes it easier to make database classes and make SQL requests.</li>
 </ol>
 
 # INSTRUCTIONS
