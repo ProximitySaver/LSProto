@@ -6,21 +6,36 @@
 }
 <h1>@ViewData["Title"]</h1>
 <main>
+    <link rel="stylesheet" href="~/css/progression.css" asp-append-version="true" />
     <section id="course-details">
         <div class="course-image">
             <img src="@Url.Content(Model.PhotoURL)" alt="Course">
         </div>
         <div class="course-infoTwo">
             <h1>@Model.Titre</h1>
-            <p>Level : @Model.Niveau?.Nom</p>
-            <p>Language : @Model.Langue?.Nom</p>
-            <p class="description">
-                @Model.Description
-            </p>
+            <div class="MidText">
+                <p class="description">
+                    @Model.Description
+                </p>
+                <p>Level : @Model.Niveau?.Nom</p>
+                <p>Language : @Model.Langue?.Nom</p>
+            </div>
             <h2>Objectives</h2>
-            <p>@Model.Objectives</p>
-            <p>Features : @Model.Features?.Nom</p>
+            <div class="MidText">
+                <p>@Model.Objectives</p>
+                <p>Features : @Model.Features?.Nom</p>
+            </div>
+            <div class="container">
+                <div class="progress-container">
+                    <div class="progress" id="progress"> </div>
+                    <div class="circle active">25%</div>
+                    <div class="circle">50%</div>
+                    <div class="circle">75%</div>
+                    <div class="circle">100%</div>
+                </div>
+            </div>
 
         </div>
     </section>
+    <script src="~/js/progression.js" asp-append-version="true"></script>
 </main>

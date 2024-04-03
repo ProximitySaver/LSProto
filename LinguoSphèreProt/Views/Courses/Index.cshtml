@@ -4,23 +4,21 @@
     ViewData["Title"] = "Available Courses";
 }
 <h1>@ViewData["Title"]</h1>
-
-<section id="courses">
-    <div class="course-grid">
-        <!-- Début -->
-        @foreach (var item in Model)
-        {
-            <div class="course-card">
-                <a href="@Url.Action("Detail", "Courses", new { id = item.CourseID })" class="course-card-link">
-                    <img src="@Url.Content(item.PhotoURL)" alt="Course">
-                    <div class="course-info">
-                        <h3>@item.Titre</h3>
-                        <p class="niveau">@item.Niveau?.Nom</p> <p>@item.Langue?.Nom</p>
-                        <p>@item.Description</p>
-                    </div>
-                </a>
-            </div>
-        }
-    </div>
-</section>
-
+    <section id="courses">
+        <div class="course-grid">
+            <!-- Début -->
+            @foreach (var item in Model)
+            {
+                <div class="course-card">
+                    <a href="@Url.Action("Detail", "Courses", new { id = item.CourseID })" class="course-card-link">
+                        <img src="@Url.Content(item.PhotoURL)" alt="Course">
+                        <div class="course-info">
+                            <h3>@item.Titre</h3>
+                            <p class="niveau">@item.Niveau?.Nom</p> <p>@item.Langue?.Nom</p>
+                            <p>@item.Description</p>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </section>
